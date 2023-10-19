@@ -3,7 +3,7 @@
 - Clonar el repositorio de GitHub:
 
   ```bash
-  git clone https://github.com/mrpotato42/Don-gato-y-asociados.git
+  git clone https://github.com/closorio/Don-gato-y-asociados.git
   ```
 
 - cd dentro del directorio de la carpeta:
@@ -11,7 +11,7 @@
   cd Don-gato-y-asociados
   ```
 
-- Instala las dependencias.
+- Instala las dependencias:
   ```bash
   npm install
   ```
