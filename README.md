@@ -3,7 +3,7 @@
 - Clonar el repositorio de GitHub:
 
   ```bash
-  git clone https://github.com/mrpotato42/Don-gato-y-asociados.git
+  git clone https://github.com/closorio/Don-gato-y-asociados.git
   ```
 
 - cd dentro del directorio de la carpeta:
