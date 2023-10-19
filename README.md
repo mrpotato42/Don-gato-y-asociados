@@ -11,7 +11,7 @@
   cd Don-gato-y-asociados
   ```
 
-- Instala las dependencias.
+- Instala las dependencias:
   ```bash
   npm install
   ```
