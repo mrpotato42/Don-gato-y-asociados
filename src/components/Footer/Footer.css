@@ -1,5 +1,10 @@
+.footer{
+    font-family: 'Nunito', sans-serif;
+}
+
 .footer__logo {
     width: 150px;
+    margin-top: 25px;
 }
 
 .redes__sociales {

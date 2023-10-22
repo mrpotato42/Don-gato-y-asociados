@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore'
 import ItemList from '../ItemList/ItemList'
 import Loader from '../Loader/Loader'
+import '../Cart/Cart.css'
 
 function ItemListContainer({greeting}) {
 

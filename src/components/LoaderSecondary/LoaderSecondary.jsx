@@ -13,10 +13,10 @@ const LoaderSecondary = () => {
     return (
         <>
             <div className="loaderSecondaryContainerMobile">
-                <MoonLoader color='#dc3545' css={override} size={150} />
+                <MoonLoader color='#247182' css={override} size={150} />
             </div>
             <div className="loaderSecondaryContainer">
-                <MoonLoader color='#dc3545' css={override} size={150} />
+                <MoonLoader color='#247182' css={override} size={150} />
             </div>
         </>
     )
