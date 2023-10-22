@@ -9,7 +9,7 @@ import '../Cart/Cart.css'
 const NavBar = ({cartCount}) => {
 	return (
         <>
-            <Navbar bg="dark" variant="dark" expand="lg">
+            <Navbar style={{width: '100%', height: '100%', position: 'relative', boxShadow: '0px 6px 6px rgba(0, 0, 0, 0.25)' , background: 'linear-gradient(69deg, #060606 0%, #235763 38%, #1C413F 72%, #060606 100%)'}}variant="dark" expand="lg">
                 <Container>
                     <Link to="/">
                         <Navbar.Brand>
@@ -18,7 +18,7 @@ const NavBar = ({cartCount}) => {
                                 width="100"
                                 height="100"
                                 className="d-inline-block align-top"
-                                alt="NGGames Logo"
+                                alt="Don Gato Logo"
                             />
                         </Navbar.Brand>
                     </Link>
