@@ -9,16 +9,18 @@ import '../Cart/Cart.css'
 const NavBar = ({cartCount}) => {
 	return (
         <>
-            <Navbar bg="dark" variant="dark" expand="lg">
+            <Navbar className='Navbar' style={{width: '100%', height: '100%', position: 'relative', boxShadow: '0px 6px 6px rgba(0, 0, 0, 0.25)' , background: 'linear-gradient(69deg, #060606 0%, #235763 38%, #1C413F 72%, #060606 100%)'}}variant="dark" expand="lg">
                 <Container>
                     <Link to="/">
                         <Navbar.Brand>
                             <img
                                 src={logo}
-                                width="100"
-                                height="100"
+                                width="80"
+                                height="80"
                                 className="d-inline-block align-top"
-                                alt="NGGames Logo"
+                                alt="Don Gato Logo"
+                                style={{padding : '5px'}}
+                              
                             />
                         </Navbar.Brand>
                     </Link>
@@ -26,8 +28,8 @@ const NavBar = ({cartCount}) => {
                         <CartWidget cartCount={cartCount} />
                     </Link> 
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
-                        <Nav className="align-items-center">
+                    <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav" >
+                        <Nav className="align-items-center" style={{paddingRight:'18px'}}>
                             <NavLink className="nav-link" to="/">
                                 Home
                             </NavLink>

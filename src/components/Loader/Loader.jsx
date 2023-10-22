@@ -1,6 +1,6 @@
 
 import { css } from '@emotion/react'
-import PacmanLoader from 'react-spinners/PacmanLoader'
+import HashLoader from 'react-spinners/HashLoader'
 import './Loader.css'
 
 const Loader = () => {
@@ -13,10 +13,10 @@ const Loader = () => {
     return (
         <>
             <div className="loaderContainerMobile">
-                <PacmanLoader color='#dc3545' css={override} size={60} />
+                <HashLoader color='#247182' css={override} size={60} />
             </div>
             <div className="loaderContainer">
-                <PacmanLoader color='#dc3545' css={override} size={150} />
+                <HashLoader color='#247182' css={override} size={150} />
             </div>
         </>
     )

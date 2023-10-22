@@ -17,7 +17,6 @@ const Footer = () => {
                 </div>
                 <div className="row mb-3">
                     <div className="col-12 text-center text-white">
-                        <h3 className="footer__texto">Nuestras <b>Redes:</b></h3>
                             <div className="redes__sociales">
                                 <a href="https://www.facebook.com" target="_blank"><FacebookIcon /></a>
                                 <a href="https://www.instagram.com" target="_blank"> <InstagramIcon /> </a>
@@ -27,7 +26,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer-final row text-center">
-                    <h4 className="text-white">© Developed by boquita el más grande</h4>
+                    <h4 className="text-white">Copyright © Don Gato S.A.S 2023</h4>
                 </div>
             </footer>
         </>
