@@ -1,6 +1,7 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import { render } from '@testing-library/react';
+import { BrowserRouter} from 'react-router-dom'
+import { render, screen } from '@testing-library/react';
 import { CartContext } from './CartContext';
 import CartContextProvider from './CartContext';
 import { fireEvent } from '@testing-library/react';
@@ -27,13 +28,15 @@ test('adds item to cart', () => {
 test('adds item to cart', () => {
   const wrapper = render(
     <CartContextProvider>
-      <CartContext.Consumer>
-        {({ addToCart }) => (
-          <button onClick={() => addToCart({ id: 1, quantity: 1 })}>
-            Add to Cart
-          </button>
-        )}
-      </CartContext.Consumer>
+      <BrowserRouter>
+        <CartContext.Consumer>
+          {({ addToCart }) => (
+            <button onClick={() => addToCart({ id: 1, quantity: 1 })}>
+              Add to Cart
+            </button>
+          )}
+        </CartContext.Consumer>
+      </BrowserRouter>
     </CartContextProvider>
   );
 
@@ -41,7 +44,8 @@ test('adds item to cart', () => {
   fireEvent.click(wrapper.getByText('Add to Cart'));
 
   // Luego, comprobamos que el elemento "1" (que podría representar la cantidad de artículos en el carrito) esté presente en el DOM.
-  expect(wrapper.getByText('1')).toBeInTheDocument();
+  console.log(screen.queryByText('1'));
+  expect(screen.queryByText('1')).toBeInTheDocument();
 });
 
 // Prueba que elimina un artículo del carrito y verifica que el artículo se eliminó correctamente.
@@ -67,6 +71,7 @@ test('removes item from cart', () => {
 
   // Comprobamos que el elemento "1" ya no esté presente en el DOM.
   expect(wrapper.queryByText('1')).not.toBeInTheDocument();
+
 });
 
 // Prueba que vacía el carrito y verifica que el carrito esté vacío.
