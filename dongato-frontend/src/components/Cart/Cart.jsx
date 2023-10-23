@@ -2,7 +2,6 @@ import React, {useContext} from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../CartContext/CartContext'
 import CartList from '../CartList/CartList'
-import banner from './../../assets/img/gamingpc.jpg'
 
 function Cart() {
 
