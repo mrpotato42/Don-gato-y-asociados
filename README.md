@@ -16,8 +16,15 @@
   npm install
   ```
 
-- Para correr el proyecto:
+- Para correr el Frontend:
+	dongato-frontend/
 
   ```bash
   npm run dev
+  ```
+  
+  - Para correr el Backend:
+	dongato-backend/
+  ```bash
+  index.js
   ```

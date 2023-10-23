@@ -1,5 +1,14 @@
-node_modules
-.DS_Store
-dist
-dist-ssr
-*.local
+# Ignorar la carpeta node_modules en cualquier lugar del proyecto
+**/node_modules/
+
+# Ignorar los archivos .env que contienen variables de entorno sensibles
+**/.env
+
+# Ignorar la carpeta .cache que puede ser creada por algunas herramientas de desarrollo
+**/.cache/
+
+# Ignorar los archivos de registro de errores 
+**/*.log
+
+# Ignorar la carpeta dist que contiene los archivos de construcción 
+**/dist/
