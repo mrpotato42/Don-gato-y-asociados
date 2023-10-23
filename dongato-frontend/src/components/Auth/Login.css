@@ -1,0 +1,187 @@
+html,
+body {
+    margin: 0;
+    width: 1440px;
+    height: 100%;
+    background: 'white';
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+}
+
+.left-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 860px;
+    height: 100hv;
+    left: 207px;
+    background: linear-gradient(180deg, #4BDBDB 0%, #14A7A7 71%, #02657A 98%);
+}
+
+/*
+.Ellipse1 {
+    width: 557px;
+    height: 557px;
+    left: 81px;
+    top: 26px;
+    position: absolute;
+    border-radius: 9999px;
+    border: 1.50px #ACEDED solid;
+}
+
+.Ellipse2 {
+    width: 557px;
+    height: 557px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border-radius: 9999px;
+    border: 1.50px #ACEDED solid;
+}
+*/
+
+.left-content .container {
+    width: 820px;
+    height: 100hv;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.left-content .container-logo-dongato {
+    width: 200px;
+    height: auto;
+}
+
+.logo-dongato {
+    width: 100%;
+}
+
+.left-content h1 {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+.left-content h2 {
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+
+}
+
+.left-content .container .btn-conocenos {
+    font-family: 'Poppins';
+    color: #02657A;
+    border-radius: 1.875rem;
+    border-color: #ACEDED;
+    background: #ACEDED;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
+    padding: 5px 20px;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 80px;
+}
+
+.left-content .container .btn-conocenos:hover {
+    background: #02657A;
+    transition: 0.3s;
+    color: #ACEDED;
+    border-color: #02657A;
+}
+
+/*################################################################*/
+
+.right-content {
+    width: 100%;
+    height: 100hv;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.right-content .container {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 365px;
+    gap: 15px;
+
+}
+
+
+.rigth-content h2 {
+    color: #333333;
+    font-size: 26px;
+    font-family: 'Poppins';
+    font-weight: 700px;
+}
+
+.right-content p {
+    color: #333333;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.right-content input {
+    opacity: 0.70;
+    color: #333333;
+    font-size: 0.9rem;
+    font-weight: 400;
+    border-radius: 25px;
+    padding: 13px 20px;
+    width: 100%;
+}
+
+.right-content .container .btn-ingresar {
+    color: white;
+    background: #77D5D5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    border-color: #77D5D5;
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+}
+
+.right-content .container .btn-ingresar:hover {
+    background: #ACEDED;
+    border-color: #ACEDED;
+    transition: 0.3s;
+}
+
+.right-content .container a {
+    color: #333333;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.right-content .foot {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.right-content .foot a {
+    color: #4cb4ce;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.right-content .foot p {
+    color: #333333;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
