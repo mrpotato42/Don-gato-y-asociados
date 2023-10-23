@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
@@ -7,9 +7,13 @@ import CartWidget from '../Cart/CartWidget'
 import '../Cart/Cart.css'
 
 const NavBar = ({cartCount}) => {
+    
+    const location = useLocation();
+    const isLoginPage = location.pathname === '/login' || location.pathname === '/register';
+
 	return (
         <>
-            <Navbar className='Navbar' style={{width: '100%', height: '100%', position: 'relative', boxShadow: '0px 6px 6px rgba(0, 0, 0, 0.25)' , background: 'linear-gradient(69deg, #060606 0%, #235763 38%, #1C413F 72%, #060606 100%)'}}variant="dark" expand="lg">
+            <Navbar className='Navbar' style={{display: isLoginPage ? 'none':'block', width: '100%', height: '100%', position: 'relative', boxShadow: '0px 6px 6px rgba(0, 0, 0, 0.25)' , background: 'linear-gradient(69deg, #060606 0%, #235763 38%, #1C413F 72%, #060606 100%)'}}variant="dark" expand="lg">
                 <Container>
                     <Link to="/">
                         <Navbar.Brand>

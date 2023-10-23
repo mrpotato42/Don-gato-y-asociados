@@ -10,8 +10,8 @@ app.use(express.json());
 //routes
 app.use(require('./routes/routes'))
 
-app.listen(3000)
-console.log('server on port 3000')
+app.listen(3200)
+console.log('server on port 3200')
 
 
 module.exports = app;
