@@ -1,12 +1,12 @@
 import React from 'react'
 import logo from '../../assets/img/favicon.png';
-import './Login.css'
+import './Login.css';
 
 export const Login = () => {
 
   return (
-    <>
-      <body className="login">
+    <div>
+      <div className="login">
 
         <div className="left-content">
 
@@ -15,11 +15,12 @@ export const Login = () => {
             <div className="Ellipse2"></div>
           </div>*/}
 
-          <div className="container">
+          <div className="container-top">
 
             <div className="container-logo-dongato">
               <img className='logo-dongato' src={logo} alt="Logo de Don gato y Asociados" />
             </div>
+
             <h1>Don gato y Asociados</h1>
             <h2>La plataforma web de compra y venta de productos y servicios de confianza</h2>
             <button className="btn-conocenos">Conócenos</button>
@@ -39,7 +40,7 @@ export const Login = () => {
             <button className='btn-ingresar' >Ingresar</button>
 
             <a className="olvide-contraseña" href='#'>Olvidé mi contraseña</a>
-           
+
             <div className="foot">
               <p>¿Quieres ser vendedor?</p>
               <a className="registrate-aqui" href='#'>Regístrate aquí</a>
@@ -48,8 +49,8 @@ export const Login = () => {
           </div>
 
         </div>
-      </body>
-    </>
+      </div>
+    </div>
   )
 }
 

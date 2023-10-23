@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import logo from '../../assets/img/favicon.png';
+import './Register.css';
 
 export const Register = () => {
   //almacenamiento de datos para el post para usuarios
@@ -49,8 +50,8 @@ const handleCorreoExist=async()=>{
 
   }
   return (
-    <html>
-      <body className="login">
+    <div>
+      <div className="register">
 
         <div className="left-content">
 
@@ -89,8 +90,8 @@ const handleCorreoExist=async()=>{
           </div>
 
         </div>
-      </body>
-    </html >
+      </div>
+    </div >
   )
 }
 
