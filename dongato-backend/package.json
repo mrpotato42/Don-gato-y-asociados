@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "sonar": "sonar-scanner"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +18,8 @@
     "morgan": "^1.10.0",
     "nodemon": "^3.0.1",
     "pg": "^8.11.3"
+  },
+  "devDependencies": {
+  "sonarqube-scanner": "^2.7.0"
   }
 }
