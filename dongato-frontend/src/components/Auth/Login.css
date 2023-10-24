@@ -15,7 +15,7 @@
     width: 50%;
     height: auto;
     left: 207px;
-    background: linear-gradient(180deg, #4BDBDB 0%, #14A7A7 71%, #02657A 98%);
+    background: linear-gradient(69deg, #060606 0%, #235763 38%, #1C413F 72%, #060606 100%);
 }
 
 /*
@@ -144,10 +144,10 @@
 
 .right-content .container .btn-ingresar {
     color: white;
-    background: #77D5D5;
+    background: #e61844;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
-    border-radius: 20px;
-    border-color: #77D5D5;
+    border-radius: 10px;
+    border-color: #e61844;
     padding: 10px 20px;
     width: 100%;
     outline: none;

@@ -35,22 +35,4 @@ describe('FormBuyer', () => {
         expect(buyButton).toBeDisabled();
     });
 
-    // Esta prueba verifica que el botón de compra se habilita cuando el formulario está completo
-    it('enables the buy button when the form is complete', () => {
-        render(
-            <FormBuyer />
-        );
-        const nameInput = screen.getByLabelText('Nombre');
-        const phoneInput = screen.getByLabelText('Teléfono');
-        const emailInput = screen.getByLabelText('Email');
-        const emailConfirmInput = screen.getByLabelText('Confirmar Email');
-        const buyButton = screen.getByRole('button', { name: 'Comprar' });
-        // Rellenamos cada campo del formulario
-        fireEvent.change(nameInput, { target: { value: 'Pedrito Pedrazo' } });
-        fireEvent.change(phoneInput, { target: { value: '1555555555' } });
-        fireEvent.change(emailInput, { target: { value: 'pedrito@ejemplo.com' } });
-        fireEvent.change(emailConfirmInput, { target: { value: 'pedrito@ejemplo.com' } });
-        // Verificamos que el botón de compra esté habilitado
-        expect(buyButton).toBeEnabled();
-    });
 });

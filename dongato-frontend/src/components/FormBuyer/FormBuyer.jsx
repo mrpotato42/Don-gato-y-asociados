@@ -103,19 +103,19 @@ const FormBuyer = () => {
                                     onChange={handleChange}
                                 >
                                     <div className="mb-3 d-flex flex-column align-items-center">
-                                        <label for="name" className="form-label">Nombre</label>
+                                        <label htmlFor="name" className="form-label">Nombre</label>
                                         <input type="name" className="form-control form-control--color" id="name" name="name" placeholder="Pedrito Pedrazo" defaultValue={formData.name} required />
                                     </div>
                                     <div className="mb-3 d-flex flex-column align-items-center">
-                                        <label for="phone" className="form-label">Teléfono</label>
+                                        <label htmlFor="phone" className="form-label">Teléfono</label>
                                         <input type="number" className="form-control form-control--color" id="phone" name="phone" placeholder="15xxxxxxxxx" defaultValue={formData.phone} required />
                                     </div>
                                     <div className="mb-3 d-flex flex-column align-items-center">
-                                        <label for="email" className="form-label">Email</label>
+                                        <label htmlFor="email" className="form-label">Email</label>
                                         <input type="email" className="form-control form-control--color" id="email" name="email" placeholder="pedrito@ejemplo.com" defaultValue={formData.email} required />
                                     </div>
                                     <div className="mb-3 d-flex flex-column align-items-center">
-                                        <label for="emailConfirm" className="form-label">Confirmar Email</label>
+                                        <label htmlFor="emailConfirm" className="form-label">Confirmar Email</label>
                                         <input type="email" className="form-control form-control--color" id='emailConfirm' name="emailConfirm" placeholder="pedrito@ejemplo.com" defaultValue={formData.emailConfirm} required />
                                     </div>
                                     <button className="btn btn-danger bg-gradient d-flex justify-content-center w-50 align-self-center" 
