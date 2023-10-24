@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import logo from '../../assets/img/favicon.png';
+import './Register.css';
 
 export const Register = () => {
   //almacenamiento de datos para el post para usuarios
@@ -25,7 +26,7 @@ const handleCorreoExist=async()=>{
 
   const handleSubmit= async(event)=>{
     event.preventDefault();
-    const respoGet= await fetch(`http://localhost:3000/existCorreo/${correo}`, {
+    const respoGet= await fetch(`http://localhost:3200/existCorreo/${correo}`, {
       method: "GET",
       headers: { "Content-Type": "application/json" },
     })
@@ -36,7 +37,7 @@ const handleCorreoExist=async()=>{
       console.log("Este correo ya existe")
     }else{
       console.log("no existe este usuario")
-      fetch("http://localhost:3000/newuser", {
+      fetch("http://localhost:3200/newuser", {
                             method: "POST",
                             headers: { "Content-Type": "application/json" },
                             body: JSON.stringify({userName, nombre, apellido, telefono, correo, password}),
@@ -49,8 +50,8 @@ const handleCorreoExist=async()=>{
 
   }
   return (
-    <html>
-      <body className="login">
+    <div>
+      <div className="register">
 
         <div className="left-content">
 
@@ -84,13 +85,13 @@ const handleCorreoExist=async()=>{
             <input className='user-password' type="password" placeholder="Contraseña" value={password} onChange={(e)=>setPassword(e.target.value)}/>
             <input className='user-repasword' type="password" placeholder="Confirmación de la contraseña" value={cPassword} onChange={(e)=>setcPassword(e.target.value)}/>
 
-            <button type='submit' disabled={password!=cPassword && correo!=""} onClick={(e)=>handleCorreoExist(e)}className='btn-registrarse'>Registrarse</button>
+            <button type='submit' disabled={password!=cPassword || correo=="" || userName==""} onClick={(e)=>handleCorreoExist(e)}className='btn-registrarse'>Registrarse</button>
             </form>
           </div>
 
         </div>
-      </body>
-    </html >
+      </div>
+    </div >
   )
 }
 
