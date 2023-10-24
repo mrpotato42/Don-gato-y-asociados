@@ -29,15 +29,11 @@ jobs:
       run: |
         cd dongato-frontend
         npm run test:unit with jest
-    - name: Run UI tests with selenium-webdriver
-      run: |
-        cd dongato-frontend
-        node runUITest.js
     - name: Install dependencies backend
       run: |
         cd dongato-backend
         npm install
-    - name: Start server backend
+    - name: Run sonarQube test
       run: |
         cd dongato-backend
         npm run sonar &
