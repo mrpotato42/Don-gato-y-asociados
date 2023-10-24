@@ -42,8 +42,8 @@ export const Login = () => {
             <a className="olvide-contraseña" href='#'>Olvidé mi contraseña</a>
 
             <div className="foot">
-              <p>¿Quieres ser vendedor?</p>
-              <a className="registrate-aqui" href='#'>Regístrate aquí</a>
+              <p>¿Aún no tienes cuenta?</p>
+              <a className="registrate-aqui" href='/register'>Regístrate aquí</a>
             </div>
 
           </div>
