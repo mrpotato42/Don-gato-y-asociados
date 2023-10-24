@@ -18,9 +18,9 @@ jobs:
         cd dongato-frontend
         npm install
     - name: Start server frontend
-       run: |
-         cd dongato-frontend
-         npm run dev 
+      run: |
+        cd dongato-frontend
+        npm run dev 
     - name: Run tests
       run: |
         cd dongato-frontend
