@@ -1,0 +1,21 @@
+.footer{
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer__logo {
+    width: 150px;
+    margin-top: 25px;
+}
+
+.logoSocial {
+    margin-right: 2rem;
+}
+
+.text-white {
+    font-size: 16px;
+    padding: 8px;
+}
+
+.footer-final {
+    background-color: rgb(24, 24, 24);
+}
