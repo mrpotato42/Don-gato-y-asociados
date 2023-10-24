@@ -28,3 +28,17 @@
   ```bash
   index.js
   ```
+
+  - Para correr pruebas unitarias con jest:
+	dongato-frontend/
+  ```bash
+  npm run test:unit
+  ```
+
+    - Para correr pruebas ui con Selenium:
+	dongato-frontend/
+  ```bash
+  node runUITests.js
+  ```
+
+
