@@ -17,6 +17,11 @@ const getExistCorreo = async (req,res) => {
     const response = await pool.query(`SELECT * FROM usuarios WHERE correo = '${req.params.email}'`)
     res.status(200).json(response.rows)
    }
+const getExistUser = async (req,res) => {
+    console.log(req.params)
+    const response = await pool.query(`SELECT * FROM usuarios WHERE username = '${req.params.username}'`)
+    res.status(200).json(response.rows)
+   }
 
 /*metodos post*/   
 const postNewUsers = async(req,res)=>{
@@ -28,5 +33,6 @@ const postNewUsers = async(req,res)=>{
 module.exports = {
     getCategories,
     getExistCorreo,
-    postNewUsers
+    postNewUsers,
+    getExistUser
 }

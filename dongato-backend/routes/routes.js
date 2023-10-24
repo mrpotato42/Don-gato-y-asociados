@@ -1,11 +1,14 @@
 const { Router } = require('express')
 const router = Router();
-const {getCategories, postNewUsers, getExistCorreo } = require ('../controllers/controllers.js')
+const {getCategories, postNewUsers, getExistCorreo,getExistUser } = require ('../controllers/controllers.js')
 
-//pide todas las categorias en la bd
-router.get('/categorias',getCategories)
+//peticiones registro
 //busca si correo que se le da ya existe en la base de datos
 router.get('/existCorreo/:email',getExistCorreo)
+
+//peticiones login
+router.get('/loginUser/:username',getExistUser)
+
 router.get('/',(req,res)=>{
     res.send('hola gato')
 })

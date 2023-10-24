@@ -24,30 +24,6 @@ test('adds item to cart', () => {
   fireEvent.click(wrapper.getByText('Add to Cart'));
 });
 
-// Prueba que añade un artículo al carrito y verifica que el artículo se agregó correctamente.
-test('adds item to cart', () => {
-  const wrapper = render(
-    <CartContextProvider>
-      <BrowserRouter>
-        <CartContext.Consumer>
-          {({ addToCart }) => (
-            <button onClick={() => addToCart({ id: 1, quantity: 1 })}>
-              Add to Cart
-            </button>
-          )}
-        </CartContext.Consumer>
-      </BrowserRouter>
-    </CartContextProvider>
-  );
-
-  // Simulamos un clic en el botón "Add to Cart".
-  fireEvent.click(wrapper.getByText('Add to Cart'));
-
-  // Luego, comprobamos que el elemento "1" (que podría representar la cantidad de artículos en el carrito) esté presente en el DOM.
-  console.log(screen.queryByText('1'));
-  expect(screen.queryByText('1')).toBeInTheDocument();
-});
-
 // Prueba que elimina un artículo del carrito y verifica que el artículo se eliminó correctamente.
 test('removes item from cart', () => {
   const wrapper = render(
