@@ -20,7 +20,7 @@ jobs:
     - name: Start server frontend
       run: |
         cd dongato-frontend
-        npm run dev 
+        npm run dev &
     - name: Run tests
       run: |
         cd dongato-frontend
