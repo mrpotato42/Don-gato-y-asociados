@@ -32,7 +32,11 @@
   ```bash
   npm run test:unit
   ```
-
+- Para correr la prueba Sonar:
+	dongato-backend/
+  ```bash
+  npm run sonar
+  ```
 - Para correr pruebas ui con Selenium:
 	dongato-frontend/
   ```bash
