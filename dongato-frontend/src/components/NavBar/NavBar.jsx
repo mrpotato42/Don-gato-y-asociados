@@ -15,7 +15,7 @@ const NavBar = ({cartCount}) => {
         <>
             <Navbar className='Navbar' style={{display: isLoginPage ? 'none':'block', width: '100%', height: '100%', position: 'relative', boxShadow: '0px 6px 6px rgba(0, 0, 0, 0.25)' , background: 'linear-gradient(69deg, #060606 0%, #235763 38%, #1C413F 72%, #060606 100%)'}}variant="dark" expand="lg">
                 <Container>
-                    <Link to="/">
+                    <Link to="/home">
                         <Navbar.Brand>
                             <img
                                 src={logo}
@@ -34,7 +34,7 @@ const NavBar = ({cartCount}) => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav" >
                         <Nav className="align-items-center" style={{paddingRight:'18px'}}>
-                            <NavLink className="nav-link" to="/">
+                            <NavLink className="nav-link" to="/home">
                                 Home
                             </NavLink>
                             <NavLink className="nav-link" to="/categoria/placas-de-video">
