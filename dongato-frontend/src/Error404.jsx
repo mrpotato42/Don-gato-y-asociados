@@ -6,7 +6,7 @@ const Error404 = () => {
         <div className="text-center">
             <h2>Error 404 - Página no encontrada.</h2>
             <div className="d-flex justify-content-center">
-                <Link to={`/`}> 
+                <Link to={`/home`}> 
                     <button className="btn btn-danger bg-gradient mt-3">Volver al Inicio</button>
                 </Link>
             </div>
