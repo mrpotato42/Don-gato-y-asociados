@@ -13,11 +13,26 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: 14
-    - name: Install dependencies
+    - name: Install dependencies frontend
       run: |
         cd dongato-frontend
-        npm ci
-    - name: Run tests
+        npm install
+    - name: Start server frontend
       run: |
         cd dongato-frontend
-        npm run test:unit
+        npm run dev &
+    - name: Run BB tests with selenium-side-runner
+      run: |
+        cd dongato-frontend
+        node runBBTest.js
+    - name: Run unit tests
+      run: |
+        cd dongato-frontend
+        npm run test:unit with jest
+    - name: Run UI tests with selenium-webdriver
+      run: |
+        cd dongato-frontend
+        node runUITest.js
+
+
+      
