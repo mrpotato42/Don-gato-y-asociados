@@ -2,5 +2,5 @@ projectKey=api-dongato
 serverUrl=http://localhost:9000
 serverVersion=10.2.1.78527
 dashboardUrl=http://localhost:9000/dashboard?id=api-dongato
-ceTaskId=AYtip93H4nSzVUz-5uXX
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYtip93H4nSzVUz-5uXX
+ceTaskId=AYtj65mU4nSzVUz-5uXY
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYtj65mU4nSzVUz-5uXY
