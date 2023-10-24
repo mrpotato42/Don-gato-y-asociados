@@ -21,6 +21,10 @@ jobs:
       run: |
         cd dongato-frontend
         npm run dev &
+    - name: Run BB tests with selenium-side-runner
+      run: |
+        cd dongato-frontend
+        node runBBTest.js
     - name: Run unit tests
       run: |
         cd dongato-frontend
@@ -29,9 +33,6 @@ jobs:
       run: |
         cd dongato-frontend
         node runUITest.js
-    - name: Run BB tests with selenium-side-runner
-      run: |
-        cd dongato-frontend
-        node runBBTest.js
+
 
       
