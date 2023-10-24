@@ -20,7 +20,7 @@ const Footer = () => {
                            
                     </div>
                 </div>
-                <div className="footer-final row text-center">
+                <div className="footer-final row text-center pt-2">
                     <h4 className="text-white">Copyright © Don Gato S.A.S 2023</h4>
                 </div>
             </footer>

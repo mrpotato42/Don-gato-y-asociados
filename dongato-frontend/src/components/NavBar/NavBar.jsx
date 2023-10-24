@@ -9,7 +9,7 @@ import '../Cart/Cart.css'
 const NavBar = ({cartCount}) => {
     
     const location = useLocation();
-    const isLoginPage = location.pathname === '/login' || location.pathname === '/register';
+    const isLoginPage = location.pathname === '/' || location.pathname === '/register';
 
 	return (
         <>

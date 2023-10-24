@@ -21,7 +21,7 @@ function App() {
 			<Routes>
 				<Route
 					exact
-					path="/"
+					path="/home"
 					element={<ItemListContainer greeting="¡Hola, Bienvenido a Don gato S.A.S!" />}
 				/>
 				<Route
@@ -49,7 +49,7 @@ function App() {
 					element={<Error404 />}
 				/>
 				<Route
-					path="/login"
+					path="/"
 					element={<Login/>}
 				/>
 				<Route
