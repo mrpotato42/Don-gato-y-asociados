@@ -33,6 +33,14 @@ jobs:
       run: |
         cd dongato-frontend
         node runUITest.js
+    - name: Install dependencies backend
+      run: |
+        cd dongato-backend
+        npm install
+    - name: Start server backend
+      run: |
+        cd dongato-backend
+        npm run sonar &
 
 
       
