@@ -15,9 +15,7 @@ jobs:
         node-version: 14
     - name: Install dependencies
       run: |
-        cd "./dongato-frontend"
-        npm ci
+        npm install
     - name: Run tests
       run: |
-        cd "./dongato-frontend"
         npm run test:unit
