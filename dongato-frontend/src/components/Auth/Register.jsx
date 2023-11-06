@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {Navigate} from 'react-router-dom'
 import logo from '../../assets/img/favicon.png';
 import './Register.css';
 
@@ -11,7 +12,7 @@ export const Register = () => {
   const [correo,setCorreo]=useState("")
   const [password,setPassword]= useState("")
   const [cPassword,setcPassword]= useState("")
-  
+  const [trueR,setTrueR]= useState(false)
 const handleCorreoExist=async()=>{
 
 
@@ -45,9 +46,12 @@ const handleCorreoExist=async()=>{
                           .then((response2) => response2.json())
                           .then((data2) => console.log(data2));
                           console.log("usuario registrado")
-      
+      setTrueR(true)
     }
+  }
 
+  if(trueR){
+    return <Navigate to={"/login"}/>
   }
   return (
     <div>

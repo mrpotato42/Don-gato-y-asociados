@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, NavLink, Navigate, useLocation } from 'react-router-dom'
+import {Navigate} from 'react-router-dom'
 import logo from '../../assets/img/favicon.png';
 import './Login.css';
 
@@ -39,7 +39,7 @@ export const Login = () => {
     }
   }
   if(trueL){
-    return <Navigate to={"/home"}/>
+    return <Navigate to={"/cart"}/>
   }
   return (
     <div>
