@@ -32,11 +32,9 @@ jobs:
         cd dongato-frontend
         npm run dev &
     - name: Run BB tests with selenium-side-runner
-      env:
-        CHROME_OPTS: --headless --no-sandbox --disable-dev-shm-usage
       run: |
         cd dongato-frontend
-        selenium-side-runner src/tests/*.side
+        node runBBTest.js
     - name: Run unit tests
       run: |
         cd dongato-frontend
