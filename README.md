@@ -46,6 +46,6 @@
 - Para correr pruebas ui con Selenium-side-runner:
 	dongato-frontend/
   ```bash
-  node runBBTests.js
+  node runBBTest.js
   ```
 
