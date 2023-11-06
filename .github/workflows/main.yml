@@ -17,6 +17,16 @@ jobs:
       run: |
         cd dongato-frontend
         npm install
+    - name: Install selenium-side-runner
+      run: |
+        cd dongato-frontend
+        npm install -g selenium-side-runner
+    - name: |
+        cd dongato-frontend
+        Install chromedriver
+      run: |
+        cd dongato-frontend
+        npm install -g chromedriver
     - name: Start server frontend
       run: |
         cd dongato-frontend
@@ -24,7 +34,7 @@ jobs:
     - name: Run BB tests with selenium-side-runner
       run: |
         cd dongato-frontend
-        node runBBTest.js
+        selenium-side-runner src/tests/*.side
     - name: Run unit tests
       run: |
         cd dongato-frontend
