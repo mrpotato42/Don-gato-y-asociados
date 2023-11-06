@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {Navigate} from 'react-router-dom'
 import logo from '../../assets/img/favicon.png';
 import './Login.css';
 
@@ -6,6 +7,7 @@ export const Login = () => {
   //almacenamiento de datos para el Get que pregunta si existe el usuario
   const [userName,setUserName]= useState("")
   const [password,setPassword]= useState("")
+  const [trueL,setTrueL]= useState(false)
 
   const handleloginGet = async(event)=>{
 
@@ -28,12 +30,16 @@ export const Login = () => {
         console.log("contraseña incorrecta")
       }else{
         console.log("login correcto")
+        setTrueL(true)
         console.log(respoGet)
       }
     }else{
       console.log(respoGet)
       console.log("No existe este usuario")
     }
+  }
+  if(trueL){
+    return <Navigate to={"/cart"}/>
   }
   return (
     <div>
@@ -67,8 +73,7 @@ export const Login = () => {
 
             <input className='user-name' type="text" placeholder="Nombre de usuario" onChange={(e)=>setUserName(e.target.value)}/>
             <input className='user-name' type="text" placeholder="Contraseña" onChange={(e)=>setPassword(e.target.value)}/>
-
-            <button className='btn-ingresar' disabled={password=="" || userName==""} onClick={(e)=>handleloginGet(e)} >Ingresar</button>
+            <button className='btn-ingresar' disabled={password=="" || userName==""} onClick={(e)=>handleloginGet(e)} >Ingresa</button>
 
             <a className="olvide-contraseña" href='#'>Olvidé mi contraseña</a>
 
