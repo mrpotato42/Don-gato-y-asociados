@@ -40,7 +40,7 @@
 - Para correr pruebas ui con Selenium:
 	dongato-frontend/
   ```bash
-  node runUITests.js
+  node runUITest.js
   ```
 
 - Para correr pruebas ui con Selenium-side-runner:
