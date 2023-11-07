@@ -24,5 +24,21 @@ services:
       - "80:80"
     depends_on:
       - postgres
+
+  backend:
+    build: dongato-backend/.
+    ports:
+      - 3200:3200
+    depends_on:
+      - postgres
+
+  frontend:
+    build: dongato-frontend/.
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend
+
+
 volumes:
   postgres-data:

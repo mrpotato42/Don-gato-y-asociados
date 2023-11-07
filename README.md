@@ -24,7 +24,7 @@
 - Para correr el Backend:
 	dongato-backend/
   ```bash
-  index.js
+  node index.js
   ```
 
 - Para correr pruebas unitarias con Jest:
