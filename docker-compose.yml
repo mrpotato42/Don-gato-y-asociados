@@ -1,7 +1,6 @@
 version: '3.8'
 
 services:
-
   postgres:
     image: postgres
     restart: always
@@ -14,6 +13,8 @@ services:
       POSTGRES_USER: ${USER_POSTGRES}
       POSTGRES_PASSWORD: ${PASSWORD_POSTGRES}
       POSTGRES_BD: ${DATABASE_POSTGRES}
+    networks:
+      - backend-network
 
   pgadmin:
     image: dpage/pgadmin4
@@ -22,7 +23,31 @@ services:
       PGADMIN_DEFAULT_PASSWORD: "${PGADMIN_PASSWORD}"
     ports:
       - "80:80"
+    networks:
+      - backend-network
+
+  backend:
+    build: dongato-backend/.
     depends_on:
       - postgres
+    ports:
+      - 3200:3200
+    networks:
+      - backend-network
+
+  frontend:
+    build: dongato-frontend/.
+    depends_on:
+      - postgres
+      - backend
+    ports:
+      - 3000:3000
+    networks:
+      - backend-network
+
 volumes:
   postgres-data:
+
+networks:
+  backend-network:
+    driver: bridge

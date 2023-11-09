@@ -24,7 +24,7 @@
 - Para correr el Backend:
 	dongato-backend/
   ```bash
-  index.js
+  node index.js
   ```
 
 - Para correr pruebas unitarias con Jest:
@@ -40,7 +40,7 @@
 - Para correr pruebas ui con Selenium:
 	dongato-frontend/
   ```bash
-  node runUITests.js
+  node runUITest.js
   ```
 
 - Para correr pruebas ui con Selenium-side-runner:
