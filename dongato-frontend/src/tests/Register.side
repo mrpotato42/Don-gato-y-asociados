@@ -1,0 +1,168 @@
+{
+  "id": "be1431f1-2573-4c47-b2d3-7ce83f945615",
+  "version": "2.0",
+  "name": "dongato",
+  "url": "http://localhost:3000",
+  "tests": [{
+    "id": "3331ea75-896f-4b03-85b5-d018a2f690b0",
+    "name": "Register",
+    "commands": [{
+      "id": "7e3cfec2-e7a5-4e77-8c85-3ba0732780dd",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce3fc2fd-ad88-451b-b5bc-1f617bf26912",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1542x916",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd59cf61-bf9c-4cda-8b06-894436409a35",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-desktop path",
+      "targets": [
+        ["css=.cart-desktop path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "78d76e28-fe65-41ed-bb11-62dbd439ac55",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Regístrate aquí",
+      "targets": [
+        ["linkText=Regístrate aquí", "linkText"],
+        ["css=.registrate-aqui", "css:finder"],
+        ["xpath=//a[contains(text(),'Regístrate aquí')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/register')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Regístrate aquí')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6c959d9-cd9e-4083-af61-1b5d0986cc29",
+      "comment": "",
+      "command": "click",
+      "target": "css=.user-name",
+      "targets": [
+        ["css=.user-name", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "935829c9-3ad0-4902-9754-8321d712c9ef",
+      "comment": "",
+      "command": "type",
+      "target": "css=.user-name",
+      "targets": [
+        ["css=.user-name", "css:finder"],
+        ["xpath=//input[@value='Alex']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Alex"
+    }, {
+      "id": "6866e9cb-2477-4901-abaf-53270b7426eb",
+      "comment": "",
+      "command": "type",
+      "target": "css=.user-fullname",
+      "targets": [
+        ["css=.user-fullname", "css:finder"],
+        ["xpath=//input[@value='Alex Ubago']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Alex Ubago"
+    }, {
+      "id": "153fb823-df0f-4091-8243-a049f7f08e3b",
+      "comment": "",
+      "command": "type",
+      "target": "css=.user-lastname",
+      "targets": [
+        ["css=.user-lastname", "css:finder"],
+        ["xpath=//input[@value='Sinestesia']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "Sinestesia"
+    }, {
+      "id": "03a3d539-d95b-4650-a784-3432536e552c",
+      "comment": "",
+      "command": "type",
+      "target": "css=.user-phone",
+      "targets": [
+        ["css=.user-phone", "css:finder"],
+        ["xpath=//input[@value='3156505874']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "3156505874"
+    }, {
+      "id": "269fa2ea-6b42-4199-84fd-1e550c2aea87",
+      "comment": "",
+      "command": "type",
+      "target": "css=.user-email",
+      "targets": [
+        ["css=.user-email", "css:finder"],
+        ["xpath=//input[@value='alex@ubago.com']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/form/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "alex@ubago.com"
+    }, {
+      "id": "5f3db2c6-c059-45cf-9216-1c97fbac63bb",
+      "comment": "",
+      "command": "type",
+      "target": "css=.user-password",
+      "targets": [
+        ["css=.user-password", "css:finder"],
+        ["xpath=//input[@value='alex']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/form/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": "alex"
+    }, {
+      "id": "6dfe04af-1005-442e-8bd6-2e515f3156c3",
+      "comment": "",
+      "command": "type",
+      "target": "css=.user-repasword",
+      "targets": [
+        ["css=.user-repasword", "css:finder"],
+        ["xpath=(//input[@value='alex'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/form/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": "alex"
+    }, {
+      "id": "fcd6e6ce-bfcd-4bdc-abc8-5ab329059119",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-registrarse",
+      "targets": [
+        ["css=.btn-registrarse", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Registrarse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b06c0f6a-7498-4bde-8eac-5d22ff636129",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}
