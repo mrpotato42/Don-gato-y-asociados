@@ -1,0 +1,48 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+name: dongato-gateway
+spec:
+selector:
+istio: ingressgateway
+servers:
+- port:
+number: 80
+name: http
+protocol: HTTP
+hosts:
+- "*"
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+name: dongatoapp
+spec:
+hosts:
+- "*"
+gateways:
+- dongatoapp-gateway
+http:
+- route:
+- destination:
+host: dongatoapp
+subset: version1
+weight: 90
+- destination:
+host: dongatoapp
+subset: version2
+weight: 10
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+name: dongatoapp
+spec:
+host: dongatoapp
+subsets:
+- name: version1
+labels:
+version: "0.0.1"
+- name: version2
+labels:
+version: "0.0.2"
