@@ -10,22 +10,13 @@
   cd Don-gato-y-asociados
   ```
 
-- Instala las dependencias por cada Package.json :
+- Con el servicio Docker corriendo, Iniciar entorno de desarrollo:
   ```bash
-  npm install
+  docker-compose up
   ```
 
-- Para correr el Frontend:
-	dongato-frontend/
-  ```bash
-  npm run dev
-  ```
-  
-- Para correr el Backend:
-	dongato-backend/
-  ```bash
-  index.js
-  ```
+
+-------------------------------------------------------------------------
 
 - Para correr pruebas unitarias con Jest:
 	dongato-frontend/
@@ -40,7 +31,7 @@
 - Para correr pruebas ui con Selenium:
 	dongato-frontend/
   ```bash
-  node runUITests.js
+  node runUITest.js
   ```
 
 - Para correr pruebas ui con Selenium-side-runner:

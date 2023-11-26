@@ -10,7 +10,7 @@ router.get('/existCorreo/:email',getExistCorreo)
 router.get('/loginUser/:username',getExistUser)
 
 router.get('/',(req,res)=>{
-    res.send('hola gato')
+    res.send('hola gatos')
 })
 //ingresa un nuevo usuario a la base de datos
 router.post('/newuser',postNewUsers)
