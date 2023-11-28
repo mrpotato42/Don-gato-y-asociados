@@ -45,7 +45,7 @@ const NavBar = ({cartCount}) => {
                             </NavLink>
                         </Nav>
                     </Navbar.Collapse>
-                    <Link className="cart-desktop" to="/cart">
+                    <Link className="cart-desktop" to="/login">
                         <CartWidget cartCount={cartCount} />
                     </Link> 
                 </Container>
