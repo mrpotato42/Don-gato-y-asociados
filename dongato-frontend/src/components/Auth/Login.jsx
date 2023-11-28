@@ -79,9 +79,9 @@ export const Login = () => {
 
             <div className="foot">
               <p>¿Aún no tienes cuenta?</p>
-              <Navlink to={'/register'}> 
+              <Link to={'/register'}> 
                     <button className="registrate-aqui">Regístrate aquí</button>
-              </Navlink>
+              </Link>
             </div>
 
           </div>
