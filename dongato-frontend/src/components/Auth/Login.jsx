@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {Navigate, Link} from 'react-router-dom'
+import {Navigate} from 'react-router-dom'
 import logo from '../../assets/img/favicon.png';
 import './Login.css';
 
@@ -79,9 +79,7 @@ export const Login = () => {
 
             <div className="foot">
               <p>¿Aún no tienes cuenta?</p>
-              <Link to={'/register'}> 
-                    <button className="registrate-aqui">Regístrate aquí</button>
-              </Link>
+              <a className="registrate-aqui" href='/register'>Regístrate aquí</a>
             </div>
 
           </div>
