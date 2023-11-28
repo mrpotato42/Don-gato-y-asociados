@@ -51,7 +51,7 @@ const handleCorreoExist=async()=>{
   }
 
   if(trueR){
-    return <Navigate to={"/login"}/>
+    return <Navigate to={"https://don-gato-y-asociados2.vercel.app/login"}/>
   }
   return (
     <div>

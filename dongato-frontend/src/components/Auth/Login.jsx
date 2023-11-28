@@ -79,7 +79,7 @@ export const Login = () => {
 
             <div className="foot">
               <p>¿Aún no tienes cuenta?</p>
-              <a className="registrate-aqui" href='/register'>Regístrate aquí</a>
+              <a className="registrate-aqui" href='https://don-gato-y-asociados2.vercel.app/register'>Regístrate aquí</a>
             </div>
 
           </div>

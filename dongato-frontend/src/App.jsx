@@ -50,12 +50,12 @@ function App() {
 				/>
 				<Route
 					exact
-					path="https://don-gato-y-asociados-jsln.vercel.app/login"
+					path="/login"
 					element={<Login/>}
 				/>
 				<Route
 					exact
-					path="https://don-gato-y-asociados-jsln.vercel.app/register"
+					path="/register"
 					element={<Register/>}
 				/>
 			</Routes>
