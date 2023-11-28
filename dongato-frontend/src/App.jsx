@@ -49,10 +49,12 @@ function App() {
 					element={<Error404 />}
 				/>
 				<Route
+					exact
 					path="/login"
 					element={<Login/>}
 				/>
 				<Route
+					exact
 					path="/register"
 					element={<Register/>}
 				/>
